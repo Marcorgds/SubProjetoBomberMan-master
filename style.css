@@ -1,0 +1,188 @@
+body {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#mainmenu{
+    display:block;
+}
+#retry{
+    top: 68%;
+    left: 43%;
+    border: none;
+    background-image: url("./source/retry.png");
+    background-size: cover;
+    background-color: transparent;
+    image-rendering: pixelated;
+
+}
+#titulo{
+    font-size: clamp(2.5rem, 8vw, 6rem);;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    z-index: 10;
+}
+#start{
+    width: 14%;
+    height: 15%;
+    position: absolute;
+    background-repeat:no-repeat ;
+    
+    top: 68%;
+    left: 43%;
+    border: none;
+    background-image: url("./source/start.png");
+    background-size: cover;
+    background-color: transparent;
+    image-rendering: pixelated;
+}
+#start:hover{
+ width: 16%;   
+ height: 16%;
+ left: 43%;
+}
+#menu{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    background-image: url(./source/inicio4.jpg);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated; 
+    overflow: hidden;
+    
+
+}
+#game {
+    display: none;
+    margin: 0;
+    width: 1008px;
+    height: 720px;
+    background: #000;
+    position: relative;
+    transform: scale(0.8);   
+    transform-origin: center;
+}
+
+#personagem{
+    background-image: url("./assets/character/idle-front.png");
+    background-size: 400% 100%;
+    background-position: 0% 0%; 
+    background-repeat: no-repeat;
+    image-rendering: pixelated; 
+    position:absolute;
+    transition: left 0.1s, top 0.1s;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+}
+#personagem2{
+    background-image: url("./assets/character/idle-back.png");
+    background-size: 400% 100%;
+    background-position: 0% 0%; 
+    background-repeat: no-repeat;
+    image-rendering: pixelated; 
+    position:absolute;
+    transition: left 0.1s, top 0.1s;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+}
+.paredequebravel{
+    z-index: 10;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url("./assets/terrain/ground.png");
+    background-size: cover ;
+    
+
+}
+.tile {
+    z-index: 9;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url("./assets/terrain/grass.png");
+    background-size: cover;
+}
+.bomba {
+    z-index: 11;
+    position: absolute;
+    display:block;
+    width: 48px;
+    height: 48px;
+    background-image: url("./assets/items/dynamite.png");
+    background-size: 300% 300%;
+    background-position: 0,0;
+}
+
+.explosao{
+    z-index: 12;
+    position: absolute;
+    display:block;
+    width: 48px;
+    height: 48px;
+    background-image: url("./assets/fxs/explosion.png");
+    background-size: 300% 200%; 
+    background-position:px 0px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated; 
+    
+}
+.bombaInativa{
+    display: none;
+}
+.outsideTile{
+    z-index: 9;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url("./assets/terrain/rock.png");
+    background-size: cover;
+}
+.tile.wall {
+    z-index: 9;
+    background-image: url("./assets/terrain/wall.png");
+}
+#placeholdergame{
+    width:  80%;
+    
+}
+
+
+#gameover{
+    background-color: black;
+    display: none;
+    
+
+}
+#gameover2{
+    background-color: black;
+    display: none;
+     width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    background-image: url(./source/end.jpg);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated; 
+    overflow: hidden;
+}
+@media screen {
+    
+}
